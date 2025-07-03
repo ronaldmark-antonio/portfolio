@@ -1,0 +1,35 @@
+
+body {
+	background-color: #FCF5E5;
+    font-family: Lato !important;
+}
+
+nav {
+	background-color: #4169E1;
+}
+
+nav a {
+	text-transform: uppercase;
+	font-weight: 700 !important;
+}
+
+div h1 {
+	font-weight: 700 !important;
+}
+
+#tools img {
+	width:  80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+#social-media img {
+	max-width: 5%;
+	max-height: 5%
+}
+
+footer {
+	font-family: Lato !important;
+	background-color: #0F52BA;
+	text-align: center;
+}
