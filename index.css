@@ -1,17 +1,82 @@
-
 body {
-	background-color: #FCF5E5;
-    font-family: Lato !important;
+    background-color: #fcfcfc;
+    font-family: 'Poppins', sans-serif;
 }
 
-nav {
-	background-color: #4169E1;
+
+.navbar {
+  font-family: 'Poppins', sans-serif;
 }
 
-nav a {
-	text-transform: uppercase;
-	font-weight: 700 !important;
+
+.nav-link {
+    color: #0056B3; /* Blue text color */
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.3s ease;
 }
+
+.nav-link:hover, .nav-link:focus {
+    color: #ffc107; /* Yellow hover effect */
+    text-decoration: none;
+}
+
+.nav-link.active {
+    color: #ffc107; /* Yellow active link color */
+    font-weight: bold;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 767px) {
+    .navbar-nav {
+        text-align: center; /* Center text in the collapsed menu */
+    }
+
+    .nav-item {
+        display: block; /* Ensure each link takes full width */
+    }
+
+    .nav-link {
+        display: inline-block; /* Allow centering within block */
+        margin: 5px 0;
+    }
+
+     /* Blue border for hamburger button */
+    .navbar-toggler {
+        border-color: #0056B3;
+        background-color: transparent;
+    }
+
+    /* Blue hamburger icon */
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,86,179,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        transition: all 0.3s ease;
+    }
+
+    /* Yellow hover effect */
+    .navbar-toggler:hover .navbar-toggler-icon,
+    .navbar-toggler:focus .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,193,7,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+}
+
+/* Optional: For better visual experience, you can add a shadow */
+.navbar {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.0); /* Soft shadow */
+}
+
+#projects{
+    background-color: #0056B3;
+}
+
+
+
+
+
+
+
+
+
 
 div h1 {
 	font-weight: 700 !important;
@@ -30,6 +95,6 @@ div h1 {
 
 footer {
 	font-family: Lato !important;
-	background-color: #0F52BA;
+	background-color: #0056B3;
 	text-align: center;
 }
