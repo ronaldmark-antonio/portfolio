@@ -69,6 +69,20 @@ body {
     background-color: #0056B3;
 }
 
+.showcase, .card-title {
+    color: #ffc107;
+}
+
+.card-body a {
+    color: #0056B3;
+}
+
+.card-body a:hover {
+    background-color: #ffc107;
+    color: #0056B3;
+}
+
+
 
 div h1 {
 	font-weight: 700 !important;
