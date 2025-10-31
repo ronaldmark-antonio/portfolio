@@ -82,6 +82,41 @@ body {
     color: #0056B3;
 }
 
+#contact{
+    background-color: #0056B3;
+}
+/* Form spacing */
+#contact textarea {
+    height: 200px; /* reduce space */
+}
+
+/* Social icons */
+.icon-img {
+    width: 26px;
+    height: 26px;
+    border-radius: 4px;
+    transition: 0.25s ease;
+}
+
+
+
+/* Hire button */
+.hire-btn {
+    background-color: #0d6efd;
+    color: white;
+    font-weight: 600;
+    padding: 8px 25px;
+    border-radius: 8px;
+    border: none;
+    transition: 0.25s ease;
+}
+
+/* Hover — turns yellow (#ffc107) */
+.hire-btn:hover {
+    background-color: #ffc107;
+    color: black;
+}
+
 
 
 div h1 {
@@ -94,13 +129,45 @@ div h1 {
     object-fit: cover;
 }
 
-#social-media img {
-	max-width: 5%;
-	max-height: 5%
+.icon-link i {
+  font-size: 22px;
+  transition: 0.25s ease;
+  color: white;
 }
 
-footer {
-	font-family: Lato !important;
-	background-color: #0056B3;
-	text-align: center;
+.icon-link i:hover {
+  color: #ffc107;
+  transform: scale(1.1);
 }
+
+
+.submit-btn {
+  padding: 8px 30px;
+  border-radius: 25px;
+}
+
+.footer-custom {
+  background: #0056B3;
+  border-top: 2px solid #fcfcfc;
+  letter-spacing: 0.5px;
+}
+
+.footer-custom h3 {
+  color: #ffc107;
+}
+
+.footer-custom .lead {
+  color: #ccc;
+  font-size: 1rem;
+}
+
+.footer-custom .nav-link:hover {
+  color: #ffc107 !important;
+  text-decoration: none;
+}
+
+.footer-custom p.small {
+  font-size: 0.85rem;
+  color: #777;
+}
+

@@ -186,9 +186,9 @@
 	
 	<!-- Tools section -->
 	<div class="container-fluid" id="tools">
-		<div class="row justify-content-center my-lg-5 my-md-5 my-5">
-			<div class="col-lg-12 col-md-12 col-12 mt-5">
-				<h1 class="text-center">Tools</h1>
+		<div class="row justify-content-center">
+			<div class="text-center col-lg-12 col-md-12 col-12 mt-5">
+				<h1 class="fw-bold text-uppercase">Tools</h1>
 			</div>
 			<div class="col-lg-2 col-lg-2 col-12 my-3">
 				<h4 class="text-center">Front End</h4>
@@ -227,70 +227,94 @@
 	</div>
 	<!-- end of Tools section -->
 
-	<!-- Contacts section -->
-	<div class="container" id="contact">
-		<div class="row align-items-center justify-content-center my-lg-5 my-md-5 my-2">
-			<div class="col-lg-12 p-lg-5 p-md-5 p-2">
-				<h1 class="text-center">Contact</h1>
+	<!-- Contact section -->
+	<div class="container-fluid py-5" id="contact">
+		<div class="container">
+			<div class="text-center text-white mb-5">
+				<h1 class="fw-bold text-uppercase">Contact</h1>
+				<p class="showcase">Let’s connect and build something great.</p>
 			</div>
-			<div class="col-lg-6 order-lg-1 order-2 m-2">
-				<div class="map-container">
-					<iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.6693228950203!2d121.01344917587411!3d14.56089292804605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c909654a740d%3A0x8ac6a5f4e8f43afb!2sRCBC%20Plaza!5e0!3m2!1sen!2sph!4v1751531091979!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</div>
-			</div>
-			<div class="col-lg-6 order-lg-2 order-1 p-lg-4 p-md-4 p-2">
-				<form id="contact-form">
-					<div class="form-group mb-lg-2">
-						<input type="text" class="form-control" id="fullname" placeholder="First Name M.I. Last Name">
-					</div>
-					<div class="form-group mb-lg-2">
-						<input type="email" class="form-control" id="email" placeholder="Email">
-					</div>
-					<div class="form-group mb-lg-2">
-						<textarea class="form-control" id="message" placeholder="Message" rows="10"></textarea>
-					</div>
-					<div class="row align-items-start m-3">
-						<div class="col-12 text-start m-2" id="social-media">
-							<a href="https://www.linkedin.com/" target="_blank"><img src="./images/linkedin.jpg"></a>
-							<a href="https://about.gitlab.com/" target="_blank"><img src="./images/gitlab.jpg"></a>
-							<a href="https://github.com/" target="_blank"><img src="./images/github.jpg"></a>
+
+			<div class="row g-4 justify-content-center">
+				<!-- RIGHT: Form -->
+				<div class="col-lg-6 col-md-10">
+					<div class="card shadow-lg border-0 rounded-4 bg-dark bg-opacity-50 text-white h-100">
+						<div class="card-body p-4">
+
+							<form id="contact-form">
+								<div class="mb-3">
+									<input type="text" class="form-control form-control-lg rounded-3" placeholder="Full Name">
+								</div>
+
+								<div class="mb-3">
+									<input type="email" class="form-control form-control-lg rounded-3" placeholder="Email Address">
+								</div>
+
+								<div class="mb-3">
+									<textarea class="form-control form-control-lg rounded-3" rows="5" placeholder="Enter your message"></textarea>
+								</div>
+
+								<div class="d-block d-md-flex justify-content-between align-items-center mt-3">
+									<div class="d-flex gap-3 social-icons">
+										<a href="https://www.linkedin.com/" target="_blank">
+											<img src="./images/linkedin.jpg" class="icon-img">
+										</a>
+										<a href="https://github.com/" target="_blank">
+											<img src="./images/github.jpg" class="icon-img">
+										</a>
+										<a href="https://gitlab.com/" target="_blank">
+											<img src="./images/gitlab.jpg" class="icon-img">
+										</a>
+									</div>
+
+									<button type="button" class="btn hire-btn mt-3 mt-md-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+										Hire Me
+									</button>
+								</div>
+							</form>
+
 						</div>
 					</div>
-					<div class="col-12 text-end m-1">
-						<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-						  HIRE ME
-						</button>
-					</div>
+				</div>
 
-					<!-- Modal -->
-					<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-					  <div class="modal-dialog">
-					    <div class="modal-content">
-					      <div class="modal-header">
-					        <h1 class="modal-title fs-5" id="staticBackdropLabel">Message</h1>
-					        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					      </div>
-					      <div class="modal-body">
-					        Thank you. Looking forward for the great opportunity 
-					      </div>
-					      <div class="modal-footer">
-					        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-					      </div>
-					    </div>
-					  </div>
-					</div>
 			</div>
 		</div>
 	</div>
-	</div>
+	<!-- Modal -->
+	<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5">Message</h1>
+					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+				</div>
+				<div class="modal-body">
+					Thank you. Looking forward to a great opportunity!
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
 	</div>
 	<!-- end of Contacts section -->
 
-	<footer>
-		<p>Ronald Mark Antonio</p>
-		<p>Full Stack Web Developer</p>
-		<p>&copy; All Rights Reserved 2025</p>
+	<footer class="footer-custom text-center text-white py-5">
+	  <div class="container">
+	    <h3 class="fw-bold mb-2" id="codeleone">CodeLeone</h3>
+	    <p class="text-white">Crafting modern web experiences with clean code & creativity.</p>
+
+	    <ul class="nav justify-content-center mb-4 fw-semibold">
+	      <li class="nav-item"><a href="#landing" class="nav-link px-2 text-white-50">Home</a></li>
+	      <li class="nav-item"><a href="#projects" class="nav-link px-2 text-white-50">Projects</a></li>
+	      <li class="nav-item"><a href="#tools" class="nav-link px-2 text-white-50">Tools</a></li>
+	      <li class="nav-item"><a href="#contact" class="nav-link px-2 text-white-50">Contact</a></li>
+	    </ul>
+
+	    <p class="small mb-0 text-white">&copy; 2025 Ronald Mark Antonio — All rights reserved.</p>
+	  </div>
 	</footer>
+
 
 	<!-- Bootstrap CSS -->
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
