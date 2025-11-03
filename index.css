@@ -123,6 +123,10 @@ div h1 {
 	font-weight: 700 !important;
 }
 
+#tools{
+    background-color: #0056B3 ;
+}
+
 #tools img {
 	width:  80px;
     height: 80px;
