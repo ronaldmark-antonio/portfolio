@@ -122,22 +122,16 @@ div h1 {
 	font-weight: 700 !important;
 }
 
+
+
+.stack {
+    color: #ffc107;
+}
+
 #techstack {
-  background: #0a0f1f; /* deep navy tech vibe */
+  background-color: #0056B3;
 }
 
-#techstack h2 {
-  font-size: 2.5rem;
-  letter-spacing: 1px;
-  color: #fff;
-}
-
-#techstack .showcase {
-  font-size: 1.1rem;
-  color: #ccc;
-  max-width: 600px;
-  margin: 0 auto;
-}
 
 .tech-icon {
   width: 70px;
@@ -155,17 +149,6 @@ h4 {
   font-weight: 700;
   margin-bottom: 15px;
   letter-spacing: 0.5px;
-}
-
-
-.stack {
-    color: #ffc107;
-}
-
-#tools img {
-	width:  80px;
-    height: 80px;
-    object-fit: cover;
 }
 
 .icon-link i {
