@@ -127,6 +127,10 @@ div h1 {
     background-color: #0056B3 ;
 }
 
+.stack {
+    color: #ffc107;
+}
+
 #tools img {
 	width:  80px;
     height: 80px;
