@@ -123,27 +123,19 @@ div h1 {
 }
 
 
+#techstack {
+  background-color: #0056B3;
+}
 
 .stack {
     color: #ffc107;
 }
 
-#techstack {
-  background-color: #0056B3;
-}
-
-
 .tech-icon {
   width: 70px;
   height: 70px;
-  transition: transform 0.3s ease, filter 0.3s ease;
-  filter: grayscale(80%) brightness(0.8);
 }
 
-.tech-icon:hover {
-  transform: scale(1.15);
-  filter: grayscale(0%) brightness(1);
-}
 
 h4 {
   font-weight: 700;
