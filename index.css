@@ -118,29 +118,19 @@ body {
 }
 
 
+
 div h1 {
 	font-weight: 700 !important;
 }
 
-
-#techstack {
-  background-color: #0056B3;
+#techstack{
+    background-color: #0056B3 ;
 }
 
-.stack {
-    color: #ffc107;
-}
-
-.tech-icon {
-  width: 70px;
-  height: 70px;
-}
-
-
-h4 {
-  font-weight: 700;
-  margin-bottom: 15px;
-  letter-spacing: 0.5px;
+#techstack img {
+	width:  80px;
+    height: 80px;
+    object-fit: cover;
 }
 
 .icon-link i {
