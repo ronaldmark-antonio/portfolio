@@ -124,7 +124,7 @@ div h1 {
 }
 
 #techstack{
-    background-color: #0056B3 ;
+    background: #0056B3 ;
 }
 
 #techstack img {
@@ -132,6 +132,13 @@ div h1 {
     height: 80px;
     object-fit: cover;
 }
+
+.tech-icon {
+  width: 80px;
+  height: auto;
+  background: transparent;
+}
+
 
 .icon-link i {
   font-size: 22px;
