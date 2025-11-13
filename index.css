@@ -156,6 +156,11 @@ div h1 {
   border-radius: 25px;
 }
 
+.modal-footer button:hover{
+    background-color: #ffc107;
+    border: none;
+}
+
 .footer-custom {
   background: #0056B3;
   border-top: 2px solid #fcfcfc;
