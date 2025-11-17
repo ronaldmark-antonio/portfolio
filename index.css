@@ -69,6 +69,15 @@ body {
     background-color: #fcfcfc;
 }
 
+.hover-warning:hover {
+    background-color: #ffc107 !important; /* Hover background */
+    border-color: #ffc107 !important;     /* Hover border */
+    color: #fcfcfc !important;               /* Text turns black on hover for contrast */
+    transition: 0.3s;
+}
+
+
+
 #projects{
     background-color: #0056B3;
 }
