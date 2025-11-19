@@ -191,13 +191,20 @@ div h1 {
 }
 
 .footer-custom {
-  background: #0056B3;
+  background-color: #fcfcfc;
   border-top: 2px solid #fcfcfc;
   letter-spacing: 0.5px;
 }
 
 .footer-custom h3 {
   color: #ffc107;
+}
+
+.nav-footer {
+    color: #ffc107;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 10px;
 }
 
 .footer-custom .lead {
