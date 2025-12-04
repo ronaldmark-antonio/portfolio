@@ -3,11 +3,9 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-
 .navbar {
   font-family: 'Poppins', sans-serif;
 }
-
 
 .nav-link {
     color: #0056B3; /* Blue text color */
@@ -142,8 +140,6 @@ body {
 .hire-btn:hover {
     background-color: #ffc107;
 }
-
-
 
 div h1 {
 	font-weight: 700 !important;
