@@ -1,86 +1,92 @@
+/* Base */
 body {
     background-color: #fcfcfc;
     font-family: 'Poppins', sans-serif;
 }
 
+/* Navbar */
 .navbar {
-  font-family: 'Poppins', sans-serif;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0);
 }
 
 .nav-link {
-    color: #0056B3; /* Blue text color */
+    color: #0056B3;
     font-weight: 500;
     font-size: 16px;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease;
 }
 
-.nav-link:hover, .nav-link:focus {
-    color: #ffc107; /* Yellow hover effect */
-    text-decoration: none;
-}
-
+.nav-link:hover,
+.nav-link:focus,
 .nav-link.active {
-    color: #ffc107; /* Yellow active link color */
-    font-weight: bold;
+    color: #ffc107;
+    text-decoration: none;
+    font-weight: 600;
 }
 
-/* Mobile view adjustments */
+/* Mobile Navbar */
 @media (max-width: 767px) {
     .navbar-nav {
-        text-align: center; /* Center text in the collapsed menu */
-    }
-
-    .nav-item {
-        display: block; /* Ensure each link takes full width */
+        text-align: center;
     }
 
     .nav-link {
-        display: inline-block; /* Allow centering within block */
+        display: inline-block;
         margin: 5px 0;
     }
 
-     /* Blue border for hamburger button */
     .navbar-toggler {
         border-color: #0056B3;
         background-color: transparent;
     }
 
-    /* Blue hamburger icon */
     .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,86,179,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-        transition: all 0.3s ease;
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,86,179,1)' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        transition: 0.3s;
     }
 
-    /* Yellow hover effect */
     .navbar-toggler:hover .navbar-toggler-icon,
     .navbar-toggler:focus .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,193,7,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,193,7,1)' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
     }
 }
 
-/* Optional: For better visual experience, you can add a shadow */
-.navbar {
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.0); /* Soft shadow */
-}
-
+/* Sections */
 #landing {
     background-color: #fcfcfc;
 }
 
-.hover-warning:hover {
-    background-color: #ffc107 !important; /* Hover background */
-    border-color: #ffc107 !important;     /* Hover border */
-    color: #fcfcfc !important;               /* Text turns black on hover for contrast */
-    transition: 0.3s;
-}
-
-
-
-#projects{
+#projects,
+#contact,
+#techstack {
     background-color: #0056B3;
 }
 
-.showcase, .card-title {
+/* Buttons */
+.hover-warning:hover {
+    background-color: #ffc107 !important;
+    border-color: #ffc107 !important;
+    color: #fcfcfc !important;
+    transition: 0.3s;
+}
+
+.hire-btn {
+    background-color: #0d6efd;
+    color: #fff;
+    font-weight: 600;
+    padding: 8px 25px;
+    border-radius: 8px;
+    border: none;
+    transition: 0.25s ease;
+}
+
+.hire-btn:hover {
+    background-color: #ffc107;
+}
+
+/* Cards */
+.showcase,
+.card-title {
     color: #ffc107;
 }
 
@@ -93,23 +99,9 @@ body {
     color: #0056B3;
 }
 
-#contact{
-    background-color: #0056B3;
-}
-/* Form spacing */
-#contact textarea {
-    height: 200px; /* reduce space */
-}
-
-/* Social icons */
-.icon-img {
-    width: 26px;
-    height: 26px;
-    border-radius: 4px;
-    transition: 0.25s ease;
-}
-
-.front-end-badge, .back-end-badge {
+/* Badges */
+.front-end-badge,
+.back-end-badge {
     position: absolute;
     top: 10px;
     left: 10px;
@@ -120,99 +112,49 @@ body {
     z-index: 1;
 }
 
-.card-img-top {
-    height: 180px;
-    object-fit: cover;
+/* Tech Stack */
+.tech-icon {
+    width: 80px;
+    height: auto;
 }
-              
-/* Hire button */
-.hire-btn {
-    background-color: #0d6efd;
-    color: white;
-    font-weight: 600;
-    padding: 8px 25px;
-    border-radius: 8px;
-    border: none;
+
+/* Contact */
+#contact textarea {
+    height: 200px;
+}
+
+.icon-img {
+    width: 26px;
+    height: 26px;
+    border-radius: 4px;
     transition: 0.25s ease;
 }
 
-/* Hover — turns yellow (#ffc107) */
-.hire-btn:hover {
-    background-color: #ffc107;
-}
-
-div h1 {
-	font-weight: 700 !important;
-}
-
-#techstack{
-    background: #0056B3 ;
-}
-
-#techstack img {
-	width:  80px;
-    height: 80px;
-    object-fit: cover;
-}
-
-.tech-icon {
-  width: 80px;
-  height: auto;
-  background: transparent;
-}
-
-
-.icon-link i {
-  font-size: 22px;
-  transition: 0.25s ease;
-  color: white;
-}
-
-.icon-link i:hover {
-  color: #ffc107;
-  transform: scale(1.1);
-}
-
-
-.submit-btn {
-  padding: 8px 30px;
-  border-radius: 25px;
-}
-
-.modal-footer button:hover{
+/* Modal */
+.modal-footer button:hover {
     background-color: #ffc107;
     border: none;
 }
 
+/* Footer */
 .footer-custom {
-  background-color: #fcfcfc;
-  border-top: 2px solid #fcfcfc;
-  letter-spacing: 0.5px;
+    background-color: #fcfcfc;
+    border-top: 2px solid #fcfcfc;
+    letter-spacing: 0.5px;
 }
 
 .footer-custom h3 {
-  color: #ffc107;
+    color: #ffc107;
 }
 
 .nav-footer {
     color: #ffc107;
     text-decoration: none;
-    display: inline-block;
     margin: 5px 10px;
-}
-
-.footer-custom .lead {
-  color: #ccc;
-  font-size: 1rem;
-}
-
-.footer-custom .nav-link:hover {
-  color: #ffc107 !important;
-  text-decoration: none;
+    display: inline-block;
 }
 
 .footer-custom p.small {
-  font-size: 0.85rem;
-  color: #777;
-}  
-        
+    font-size: 0.85rem;
+    color: #777;
+}
