@@ -115,8 +115,10 @@ body {
 /* Tech Stack */
 .tech-icon {
     width: 90px;
-    height: auto;
+    height: 90px;
+    object-fit: contain;
 }
+
 
 /* Contact */
 #contact textarea {
